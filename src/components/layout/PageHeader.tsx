@@ -2,10 +2,10 @@ export const PageHeader = () => {
   return (
     <header className="site-header">
       <div className="brand-block">
-        <div className="brand-mark">BR</div>
+        <img className="brand-logo" src="/company/logo.png" alt="安徽犇融商务咨询有限公司 Logo" />
         <div>
-          <strong>本融科技</strong>
-          <span>Digital Lending Services</span>
+          <strong>安徽犇融商务咨询有限公司</strong>
+          <span>助贷协同与风控服务</span>
         </div>
       </div>
       <nav className="top-nav">

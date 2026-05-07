@@ -13,7 +13,7 @@ export const CompanyIntro = () => {
           <div className="company-story-metrics">
             <div>
               <small>业务协同</small>
-              <strong>客户 / 渠道 / 资方</strong>
+              <strong>客户 / 渠道 / 资金方</strong>
             </div>
             <div>
               <small>系统能力</small>
@@ -23,8 +23,8 @@ export const CompanyIntro = () => {
         </article>
         <aside className="company-aside-card">
           <span className="inline-badge">服务方式</span>
-          <strong>以标准化流程承接复杂业务，以数据视图反哺增长决策。</strong>
-          <p>初版首页聚焦演示与对外展示，后续可以平滑接入公司服务器、经营报表接口与实时日志流。</p>
+          <strong>以标准化流程承接复杂业务，以清晰数据视图支撑增长决策。</strong>
+          <p>首页以展示与演示为主，后续可平滑接入公司服务器、经营报表接口与实时日志流。</p>
         </aside>
       </div>
       <Row gutter={[18, 18]}>

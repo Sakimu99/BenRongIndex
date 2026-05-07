@@ -5,11 +5,11 @@ function App() {
   return (
     <ConfigProvider
       theme={{
-        algorithm: theme.darkAlgorithm,
+        algorithm: theme.defaultAlgorithm,
         token: {
-          colorPrimary: '#D6B36A',
-          colorInfo: '#6DA8FF',
-          borderRadius: 18,
+          colorPrimary: '#B58A36',
+          colorInfo: '#4F7DDC',
+          borderRadius: 16,
           fontFamily: '"Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif',
         },
       }}

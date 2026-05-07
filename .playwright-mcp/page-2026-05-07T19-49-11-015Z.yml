@@ -1,0 +1,183 @@
+- generic [ref=e4]:
+  - banner [ref=e5]:
+    - generic [ref=e6]:
+      - img "安徽犇融商务咨询有限公司 Logo" [ref=e7]
+      - generic [ref=e8]:
+        - strong [ref=e9]: 安徽犇融商务咨询有限公司
+        - generic [ref=e10]: 助贷协同与风控服务
+    - navigation [ref=e11]:
+      - link "经营概览" [ref=e12] [cursor=pointer]:
+        - /url: "#overview"
+      - link "公司介绍" [ref=e13] [cursor=pointer]:
+        - /url: "#company"
+      - link "核心成员" [ref=e14] [cursor=pointer]:
+        - /url: "#team"
+      - link "运行日志" [ref=e15] [cursor=pointer]:
+        - /url: "#runtime"
+  - main [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]: ANHUI BENGRONG
+          - generic [ref=e21]: Professional Lending Service Console
+        - heading "让助贷业务的增长、风控与资金协同，在同一张首页里清晰呈现。" [level=1] [ref=e22]
+        - paragraph [ref=e23]: 面向客户服务、准入风控、流程运营与资金撮合场景，构建更明亮、更透明、更高效的业务展示首页，既适合对外呈现，也便于后续接入真实经营数据。
+        - generic [ref=e24]:
+          - link "查看经营数据" [ref=e25] [cursor=pointer]:
+            - /url: "#overview"
+            - generic [ref=e26]: 查看经营数据
+          - link "了解公司能力" [ref=e27] [cursor=pointer]:
+            - /url: "#company"
+            - generic [ref=e28]: 了解公司能力
+      - generic [ref=e30]:
+        - generic [ref=e32]: 品牌展示区
+        - strong [ref=e33]: 增长、风控、资金三位一体
+        - paragraph [ref=e34]: 以更轻盈的视觉方式呈现核心能力，让首页看起来更像正式企业官网，而不是占位面板。
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - generic [ref=e37]: 业务重点
+            - generic [ref=e38]: 协同增长
+          - generic [ref=e39]:
+            - generic [ref=e40]: 风控重点
+            - generic [ref=e41]: 标准化流程
+          - generic [ref=e42]:
+            - generic [ref=e43]: 资金重点
+            - generic [ref=e44]: 高效撮合
+          - generic [ref=e45]:
+            - generic [ref=e46]: 页面状态
+            - generic [ref=e47]: 视觉焕新
+    - generic [ref=e50]:
+      - generic [ref=e51]: OVERVIEW
+      - heading "经营概览" [level=2] [ref=e52]
+      - paragraph [ref=e53]: 围绕客户服务规模与资金撮合表现，形成可快速演示、后续可接真实接口的数据首页。
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]: DATA TREND
+        - heading "客户与出额趋势" [level=2] [ref=e65]
+        - paragraph [ref=e66]: 默认基于系统时间回溯最近 30 天，支持按自定义日期区间查看业务趋势。
+      - generic [ref=e68]:
+        - radiogroup "segmented control" [ref=e69]:
+          - generic [ref=e70]:
+            - generic [ref=e71] [cursor=pointer]:
+              - radio "近 7 天"
+              - generic "近 7 天" [ref=e72]
+            - generic [ref=e73] [cursor=pointer]:
+              - radio "近 30 天" [checked]
+              - generic "近 30 天" [ref=e74]
+            - generic [ref=e75] [cursor=pointer]:
+              - radio "近 90 天"
+              - generic "近 90 天" [ref=e76]
+        - generic [ref=e77]:
+          - textbox "Start date" [ref=e79]: 2026-04-09
+          - generic "to" [ref=e81]:
+            - img "swap-right" [ref=e82]:
+              - img [ref=e83]
+          - textbox "End date" [ref=e86]: 2026-05-08
+          - generic:
+            - img "calendar":
+              - img
+    - generic [ref=e95]:
+      - generic [ref=e97]:
+        - generic [ref=e98]: COMPANY PROFILE
+        - heading "公司介绍" [level=2] [ref=e99]
+        - paragraph [ref=e100]: 以数字化协同和流程标准化能力，为助贷业务提供更稳健的运营支撑。
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - article [ref=e104]:
+            - generic [ref=e105]: 关于我们
+            - heading "安徽犇融商务咨询有限公司" [level=3] [ref=e106]
+            - heading "聚焦助贷协同、风控管理与资金效率提升的专业服务伙伴" [level=4] [ref=e107]
+            - paragraph [ref=e108]: 安徽犇融商务咨询有限公司专注于助贷业务的数字化协同，围绕客户触达、准入风控、流程管理与资金撮合构建更透明、更高效的业务支持体系，帮助合作伙伴稳定推进增长与交付。
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]: 业务协同
+                - strong [ref=e112]: 客户 / 渠道 / 资金方
+              - generic [ref=e113]:
+                - generic [ref=e114]: 系统能力
+                - strong [ref=e115]: 流程化 / 数据化 / 可接入
+          - complementary [ref=e116]:
+            - generic [ref=e117]: 服务方式
+            - strong [ref=e118]: 以标准化流程承接复杂业务，以清晰数据视图支撑增长决策。
+            - paragraph [ref=e119]: 首页以展示与演示为主，后续可平滑接入公司服务器、经营报表接口与实时日志流。
+        - generic [ref=e120]:
+          - article [ref=e122]:
+            - generic [ref=e123]: "01"
+            - strong [ref=e124]: 增长协同
+            - paragraph [ref=e125]: 围绕线索管理、渠道联动与转化分析，形成更顺畅的业务获取和运营机制。
+          - article [ref=e127]:
+            - generic [ref=e128]: "02"
+            - strong [ref=e129]: 风控管理
+            - paragraph [ref=e130]: 通过规则引擎与流程节点协同，实现资料审核、风险筛查与业务推进的标准化闭环。
+          - article [ref=e132]:
+            - generic [ref=e133]: "03"
+            - strong [ref=e134]: 资金效率
+            - paragraph [ref=e135]: 结合资金方策略进行产品匹配与流程编排，提升撮合效率与整体成功率。
+    - generic [ref=e136]:
+      - generic [ref=e138]:
+        - generic [ref=e139]: CORE TEAM
+        - heading "核心成员" [level=2] [ref=e140]
+        - paragraph [ref=e141]: 兼顾业务、风控、技术与运营的协同团队，为业务规模化提供持续支撑。
+      - generic [ref=e143]:
+        - article [ref=e145]:
+          - generic [ref=e146]:
+            - generic [ref=e148]: 周
+            - generic [ref=e149]:
+              - strong [ref=e150]: 周景行
+              - generic [ref=e151]: 业务总经理
+            - emphasis [ref=e152]: 核心序列
+          - paragraph [ref=e153]: 深耕助贷与消费金融业务多年，负责业务增长策略、渠道协同与机构合作管理。
+          - generic [ref=e154]:
+            - generic [ref=e155]: 渠道增长
+            - generic [ref=e156]: 机构合作
+            - generic [ref=e157]: 业务策略
+        - article [ref=e159]:
+          - generic [ref=e160]:
+            - generic [ref=e162]: 林
+            - generic [ref=e163]:
+              - strong [ref=e164]: 林知远
+              - generic [ref=e165]: 风控负责人
+            - emphasis [ref=e166]: 核心序列
+          - paragraph [ref=e167]: 专注贷前准入与风控策略建设，持续优化客户分层、审批规则与风险预警机制。
+          - generic [ref=e168]:
+            - generic [ref=e169]: 准入风控
+            - generic [ref=e170]: 规则引擎
+            - generic [ref=e171]: 数据分析
+        - article [ref=e173]:
+          - generic [ref=e174]:
+            - generic [ref=e176]: 沈
+            - generic [ref=e177]:
+              - strong [ref=e178]: 沈若衡
+              - generic [ref=e179]: 技术负责人
+            - emphasis [ref=e180]: 核心序列
+          - paragraph [ref=e181]: 负责平台架构与数据产品建设，推进业务中台、数据看板与系统对接能力落地。
+          - generic [ref=e182]:
+            - generic [ref=e183]: 平台架构
+            - generic [ref=e184]: 数据中台
+            - generic [ref=e185]: 接口集成
+        - article [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e190]: 许
+            - generic [ref=e191]:
+              - strong [ref=e192]: 许清禾
+              - generic [ref=e193]: 运营负责人
+            - emphasis [ref=e194]: 核心序列
+          - paragraph [ref=e195]: 负责客户服务流程、进件协同与贷后反馈管理，提升交付效率与客户体验。
+          - generic [ref=e196]:
+            - generic [ref=e197]: 运营流程
+            - generic [ref=e198]: 客户服务
+            - generic [ref=e199]: 交付管理
+    - generic [ref=e202]:
+      - generic [ref=e203]: RUNTIME LOGS
+      - heading "系统运行日志" [level=2] [ref=e204]
+      - paragraph [ref=e205]: 页面底部终端风格模块预留了后续对接服务器、日志流与状态监控的能力。
+  - generic [ref=e214]:
+    - img "arrow-down" [ref=e215]:
+      - img [ref=e216]
+    - generic [ref=e218]: Scroll for business capability
+  - contentinfo [ref=e219]:
+    - generic [ref=e220]:
+      - strong [ref=e221]: 安徽犇融商务咨询有限公司
+      - paragraph [ref=e222]: 专注于助贷业务的数字化协同、风控管理与资金效率提升。
+    - generic [ref=e223]:
+      - generic [ref=e224]: 商务合作：business@benrong.example
+      - generic [ref=e225]: © 2026 安徽犇融商务咨询有限公司. All rights reserved.

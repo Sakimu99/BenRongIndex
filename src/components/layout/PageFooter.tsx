@@ -2,12 +2,12 @@ export const PageFooter = () => {
   return (
     <footer className="site-footer">
       <div>
-        <strong>本融科技</strong>
-        <p>专注于助贷服务的数字化协同与撮合效率提升。</p>
+        <strong>安徽犇融商务咨询有限公司</strong>
+        <p>专注于助贷业务的数字化协同、风控管理与资金效率提升。</p>
       </div>
       <div>
         <span>商务合作：business@benrong.example</span>
-        <span>© 2026 BengRong Technology. All rights reserved.</span>
+        <span>© 2026 安徽犇融商务咨询有限公司. All rights reserved.</span>
       </div>
     </footer>
   );

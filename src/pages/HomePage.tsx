@@ -58,18 +58,18 @@ export const HomePage = () => {
           <section className="hero-section">
             <div className="hero-copy">
               <div className="hero-topline">
-                <span className="section-eyebrow">BENGRONG TECHNOLOGY</span>
-                <span className="hero-status-pill">Enterprise Lending Service Console</span>
+                <span className="section-eyebrow">ANHUI BENGRONG CONSULTING</span>
+                <span className="hero-status-pill">Professional Lending Service Console</span>
               </div>
-              <h1>把助贷业务的增长、风控与资金协同，统一呈现在一张专业首页里。</h1>
+              <h1>让助贷业务的增长、风控与资金协同，在同一张首页里清晰呈现。</h1>
               <p>
-                面向客户服务、准入风控、流程运营与资金撮合场景，构建更透明、更高效、更可持续的业务支持体系，既能对外展示，也便于后续直接接入公司经营数据服务。
+                面向客户服务、准入风控、流程运营与资金撮合场景，构建更明亮、更透明、更高效的业务展示首页，既适合对外呈现，也便于后续接入真实经营数据。
               </p>
               <div className="hero-actions">
                 <Button type="primary" size="large" href="#overview">
                   查看经营数据
                 </Button>
-                <Button size="large" ghost href="#company">
+                <Button size="large" href="#company">
                   了解公司能力
                 </Button>
               </div>
@@ -93,25 +93,25 @@ export const HomePage = () => {
             <div className="hero-panel">
               <div className="hero-panel-frame">
                 <div className="hero-panel-screen" />
-                <span>业务运行状态</span>
-                <strong>渠道稳定 / 风控正常 / 数据已同步</strong>
-                <p>默认展示最近 30 天经营数据，并可无缝切换至后续服务器接口。</p>
+                <span>品牌展示区</span>
+                <strong>增长、风控、资金三位一体</strong>
+                <p>以更轻盈的视觉方式呈现核心能力，让首页看起来更像正式企业官网，而不是占位面板。</p>
                 <div className="hero-mini-grid">
                   <div>
-                    <small>数据周期</small>
-                    <b>近 30 天</b>
+                    <small>业务重点</small>
+                    <b>协同增长</b>
                   </div>
                   <div>
-                    <small>数据模式</small>
-                    <b>Mock Ready</b>
+                    <small>风控重点</small>
+                    <b>标准化流程</b>
                   </div>
                   <div>
-                    <small>接口预留</small>
-                    <b>API Compatible</b>
+                    <small>资金重点</small>
+                    <b>高效撮合</b>
                   </div>
                   <div>
-                    <small>更新粒度</small>
-                    <b>按天统计</b>
+                    <small>页面状态</small>
+                    <b>视觉焕新</b>
                   </div>
                 </div>
               </div>
@@ -168,9 +168,9 @@ export const HomePage = () => {
           </SectionContainer>
 
           <SectionContainer
-            eyebrow="RUNTIME LOGS"
-            title="系统运行日志"
-            description="页面底部终端风格模块预留了后续对接服务器、日志流与状态监控的能力。"
+            eyebrow="STATUS SNAPSHOT"
+            title="运行状态摘要"
+            description="页面底部保留简洁的运行状态展示，便于后续接入真实数据与告警信息。"
             className="runtime-section"
           >
             <div id="runtime">
