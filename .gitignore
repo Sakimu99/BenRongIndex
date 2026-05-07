@@ -125,6 +125,16 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local workflow artifacts
+.spec-workflow/
+
 # pnpm
 .pnpm-store
 
