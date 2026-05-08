@@ -84,7 +84,53 @@ export const BusinessTrendChart = ({ trend }: BusinessTrendChartProps) => {
         areaStyle: { color: palette.amountArea },
       },
     ],
+    media: [
+      {
+        query: { maxWidth: 768 },
+        option: {
+          tooltip: { confine: true },
+          legend: {
+            top: 0,
+            left: 0,
+            right: 0,
+            type: 'scroll',
+            itemWidth: 10,
+            itemHeight: 10,
+            textStyle: { color: '#A8B6CC', fontSize: 11 },
+          },
+          grid: {
+            left: 8,
+            right: 8,
+            top: 68,
+            bottom: 18,
+            containLabel: true,
+          },
+          xAxis: {
+            axisLabel: {
+              color: palette.axis,
+              fontSize: 10,
+              hideOverlap: true,
+              interval: 'auto',
+            },
+          },
+          yAxis: [
+            {
+              axisLabel: { color: palette.axis, fontSize: 10 },
+              nameTextStyle: { color: palette.axis, fontSize: 10 },
+            },
+            {
+              axisLabel: {
+                color: palette.axis,
+                fontSize: 10,
+                formatter: (value: number) => formatCompactMoney(value),
+              },
+              nameTextStyle: { color: palette.axis, fontSize: 10 },
+            },
+          ],
+        },
+      },
+    ],
   };
 
-  return <ReactECharts option={option} style={{ height: 380 }} />;
+  return <ReactECharts option={option} style={{ height: 'clamp(240px, 46vw, 380px)' }} />;
 };

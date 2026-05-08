@@ -156,6 +156,10 @@ body {
   gap: 24px;
 }
 
+.mobile-nav-trigger {
+  display: none;
+}
+
 .top-nav a {
   font-size: 14px;
   color: #516179;
@@ -493,6 +497,167 @@ body {
   background: linear-gradient(180deg, #ffffff, #f8fbff);
 }
 
+.anhui-map-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.anhui-map-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.anhui-map-copy {
+  max-width: 44rem;
+}
+
+.anhui-map-side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: stretch;
+  min-width: min(460px, 100%);
+}
+
+.anhui-map-toolbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(244, 248, 255, 0.88)),
+    rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(90, 110, 140, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    0 14px 36px rgba(81, 104, 141, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.anhui-map-toolbar-label {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #7a89a4;
+}
+
+.anhui-map-switch {
+  display: inline-flex;
+  width: 100%;
+  padding: 6px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(240, 245, 255, 0.9), rgba(255, 255, 255, 0.96));
+  border: 1px solid rgba(90, 110, 140, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.anhui-map-switch .ant-segmented-group {
+  width: 100%;
+  gap: 4px;
+}
+
+.anhui-map-switch .ant-segmented-item {
+  flex: 1;
+  min-width: 0;
+  text-align: center;
+  color: #5b6c86;
+}
+
+.anhui-map-switch .ant-segmented-item-selected {
+  color: #1d2a40;
+  font-weight: 600;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 250, 255, 0.94));
+  box-shadow: 0 8px 18px rgba(79, 125, 220, 0.12);
+}
+
+.anhui-map-switch .ant-segmented-item-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  white-space: nowrap;
+}
+
+.anhui-map-header strong {
+  display: block;
+  margin: 12px 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1.15;
+  color: #1d2a40;
+}
+
+.anhui-map-header p,
+.anhui-map-footer span,
+.anhui-map-error {
+  color: var(--text-subtle);
+}
+
+.anhui-map-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  min-width: min(420px, 100%);
+}
+
+.anhui-map-metrics div {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(79, 125, 220, 0.08), rgba(255, 255, 255, 0.9));
+  border: 1px solid rgba(79, 125, 220, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.anhui-map-metrics small,
+.anhui-map-metrics strong {
+  display: block;
+}
+
+.anhui-map-metrics small {
+  margin-bottom: 8px;
+  color: #7a89a4;
+}
+
+.anhui-map-metrics strong {
+  font-size: 20px;
+  color: #1f2f49;
+}
+
+.anhui-map-chart {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(90, 110, 140, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 16px 34px rgba(84, 108, 146, 0.06);
+  background:
+    radial-gradient(circle at top, rgba(79, 125, 220, 0.08), transparent 50%),
+    linear-gradient(180deg, #fbfdff 0%, #f3f8ff 100%);
+}
+
+
+.anhui-map-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.anhui-map-loading,
+.anhui-map-error {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+}
+
 .date-range-toolbar {
   display: flex;
   align-items: center;
@@ -723,14 +888,18 @@ body {
 }
 
 @media (max-width: 1024px) {
+  .page-content {
+    width: min(100% - 32px, 1240px);
+  }
+
   .hero-section,
   .company-grid {
     grid-template-columns: 1fr;
   }
 
+  .site-header,
   .section-heading,
-  .site-footer,
-  .site-header {
+  .site-footer {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -740,48 +909,490 @@ body {
     gap: 14px 20px;
   }
 
+  .hero-section {
+    gap: 24px;
+    padding: 64px 0 44px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(40px, 6vw, 56px);
+  }
+
   .hero-data-band {
     grid-template-columns: 1fr;
+  }
+
+  .company-grid {
+    gap: 16px;
   }
 }
 
 @media (max-width: 768px) {
   .page-content {
-    width: min(100% - 24px, 1240px);
+    width: min(100% - 20px, 1240px);
+    padding: 20px 0 52px;
+  }
+
+  .site-header {
+    position: static;
+    top: auto;
+    border-radius: 28px;
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+    padding: 6px;
+  }
+
+  .brand-block strong {
+    font-size: 15px;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
+  .mobile-nav-trigger {
+    position: fixed;
+    right: calc(16px + env(safe-area-inset-right));
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    z-index: 60;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-color: rgba(90, 110, 140, 0.12);
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 16px 36px rgba(64, 88, 124, 0.18);
+  }
+
+  .mobile-nav-trigger span {
+    margin-inline-start: 0 !important;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .mobile-nav a {
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(79, 125, 220, 0.06);
+    color: #233449;
+  }
+
+  .hero-section {
+    gap: 20px;
+    padding: 42px 0 32px;
+  }
+
+  .hero-topline {
+    gap: 8px;
   }
 
   .hero-copy h1 {
-    font-size: 38px;
+    margin: 16px 0 14px;
+    font-size: clamp(30px, 8vw, 38px);
+    max-width: none;
+  }
+
+  .hero-copy p {
+    font-size: 15px;
+    line-height: 1.8;
   }
 
   .hero-actions,
   .date-range-toolbar,
-  .company-story-metrics {
+  .company-story-metrics,
+  .site-footer,
+  .section-heading {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .section-shell {
-    padding: 22px;
+  .date-range-toolbar .ant-segmented {
+    width: 100%;
+  }
+
+  .date-range-toolbar .ant-segmented-group {
+    width: 100%;
+  }
+
+  .date-range-toolbar .ant-segmented-item {
+    flex: 1;
+  }
+
+  .date-range-toolbar .ant-picker {
+    width: 100%;
+  }
+
+  .date-range-toolbar .ant-picker-range {
+    width: 100%;
+  }
+
+  .date-range-toolbar .ant-picker-input > input {
+    font-size: 14px;
+  }
+
+  .hero-actions .ant-btn,
+  .date-range-toolbar .ant-btn,
+  .date-range-toolbar .ant-picker,
+  .date-range-toolbar .ant-segmented {
+    width: 100%;
+  }
+
+  .hero-data-band {
+    gap: 10px;
+    margin-top: 24px;
+    padding: 12px;
+  }
+
+  .hero-data-band div {
+    padding: 14px 16px;
+  }
+
+  .hero-data-band strong {
+    font-size: 18px;
   }
 
   .hero-panel-frame {
     min-height: unset;
-    padding: 28px;
+    padding: 22px;
+    border-radius: 28px;
+  }
+
+  .hero-panel::after {
+    inset: 10% 8% auto auto;
+    width: 140px;
+    height: 140px;
   }
 
   .hero-panel-screen {
     position: relative;
     inset: unset;
-    height: 180px;
-    margin-bottom: 24px;
+    height: 160px;
+    margin-bottom: 18px;
+  }
+
+  .hero-panel-frame strong {
+    font-size: 26px;
+  }
+
+  .hero-panel-frame p {
+    margin: 12px 0 20px;
+  }
+
+  .hero-mini-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .section-shell {
+    padding: 18px;
+    margin-top: 20px;
+    border-radius: 28px;
+  }
+
+  .section-heading {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .section-heading h2 {
+    margin: 10px 0 8px;
+    font-size: clamp(24px, 7vw, 32px);
+  }
+
+  .section-heading p {
+    line-height: 1.7;
+  }
+
+  .anhui-map-header,
+  .anhui-map-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .anhui-map-panel {
+    gap: 16px;
+  }
+
+  .anhui-map-side,
+  .anhui-map-copy {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .anhui-map-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .anhui-map-switch {
+    width: 100%;
+  }
+
+  .anhui-map-switch .ant-segmented-group {
+    width: 100%;
+  }
+
+  .anhui-map-switch .ant-segmented-item {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .anhui-map-toolbar {
+    width: 100%;
+    padding: 12px 14px;
+  }
+
+  .anhui-map-switch {
+    width: 100%;
+  }
+
+  .anhui-map-header strong {
+    font-size: 24px;
+  }
+
+  .anhui-map-metrics {
+    grid-template-columns: 1fr;
+    min-width: 0;
+  }
+
+  .anhui-map-chart {
+    border-radius: 20px;
+  }
+
+  .chart-card,
+  .company-story,
+  .feature-card,
+  .member-card,
+  .metric-card,
+  .terminal-shell,
+  .company-aside-card {
+    border-radius: 22px;
+  }
+
+  .chart-card {
+    padding: 14px;
+  }
+
+  .metric-card,
+  .company-story,
+  .feature-card,
+  .member-card,
+  .company-aside-card {
+    padding: 20px;
+  }
+
+  .metric-card {
+    gap: 14px;
+  }
+
+  .metric-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    font-size: 18px;
+  }
+
+  .metric-copy strong {
+    font-size: 24px;
+  }
+
+  .company-story h3 {
+    font-size: 30px;
+  }
+
+  .company-story h4 {
+    font-size: 18px;
+  }
+
+  .company-aside-card strong {
+    font-size: 24px;
+  }
+
+  .company-story-metrics {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .company-story-metrics div {
+    padding: 14px;
   }
 
   .member-head {
     grid-template-columns: auto 1fr;
+    gap: 12px;
   }
 
   .member-seq {
     grid-column: 1 / -1;
   }
+
+  .site-footer {
+    padding: 28px 4px 8px;
+  }
 }
+
+@media (max-width: 480px) {
+  .page-content {
+    width: calc(100% - 16px);
+    padding: 16px 0 44px;
+  }
+
+  .site-header {
+    padding: 12px 14px;
+    border-radius: 22px;
+  }
+
+  .brand-block {
+    gap: 10px;
+  }
+
+  .brand-block strong {
+    font-size: 14px;
+  }
+
+  .brand-block span,
+  .top-nav a,
+  .section-heading p,
+  .metric-copy span,
+  .metric-copy p,
+  .hero-copy p,
+  .hero-panel-frame p,
+  .company-story p,
+  .feature-card p,
+  .member-card p,
+  .site-footer p,
+  .site-footer span,
+  .company-aside-card p {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding: 30px 0 24px;
+  }
+
+  .hero-copy h1 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .hero-status-pill {
+    padding: 7px 12px;
+    letter-spacing: 0.06em;
+  }
+
+  .hero-actions {
+    margin-top: 22px;
+  }
+
+  .hero-actions .ant-btn {
+    height: 42px;
+    padding-inline: 16px;
+    width: 100%;
+  }
+
+  .hero-actions .ant-btn + .ant-btn {
+    margin-left: 0;
+  }
+
+  .hero-data-band {
+    padding: 10px;
+    border-radius: 22px;
+  }
+
+  .hero-panel-frame {
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .hero-panel-frame strong {
+    font-size: 22px;
+  }
+
+  .hero-panel-screen {
+    height: 140px;
+    margin-bottom: 14px;
+  }
+
+  .anhui-map-header strong {
+    font-size: 20px;
+  }
+
+  .anhui-map-metrics strong {
+    font-size: 18px;
+  }
+
+  .anhui-map-zoom-controls {
+    flex-wrap: wrap;
+  }
+
+  .anhui-map-switch {
+    width: 100%;
+  }
+
+  .anhui-map-switch .ant-segmented-group {
+    width: 100%;
+  }
+
+  .anhui-map-loading,
+  .anhui-map-error {
+    min-height: 260px;
+  }
+
+  .section-shell {
+    padding: 16px;
+    border-radius: 24px;
+  }
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+
+  .metric-card,
+  .company-story,
+  .feature-card,
+  .member-card,
+  .company-aside-card {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .metric-copy strong,
+  .company-story h3,
+  .company-aside-card strong {
+    font-size: 20px;
+  }
+
+  .chart-card {
+    padding: 12px;
+  }
+
+  .site-footer {
+    gap: 16px;
+  }
+
+  .site-footer div {
+    width: 100%;
+  }
+
+  .mobile-nav-trigger {
+    width: 48px;
+    height: 48px;
+  }
+
+  .company-story-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+

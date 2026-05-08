@@ -1,0 +1,36 @@
+- generic [ref=e295]:
+  - generic [ref=e296]:
+    - generic [ref=e297]:
+      - generic [ref=e298]: 市级切换
+      - strong [ref=e299]: 安徽省市级客户覆盖示意
+      - paragraph [ref=e300]: 以安徽 16 个地级市作为展示主体，更适合首页快速浏览整体业务分布与重点城市。
+    - generic [ref=e301]:
+      - generic [ref=e302]:
+        - generic [ref=e303]:
+          - generic [ref=e304]: 覆盖地市
+          - strong [ref=e305]: 16 个
+        - generic [ref=e306]:
+          - generic [ref=e307]: 示例客户
+          - strong [ref=e308]: 351 个
+        - generic [ref=e309]:
+          - generic [ref=e310]: 最密集区域
+          - strong [ref=e311]: 合肥市
+      - generic [ref=e312]:
+        - generic [ref=e313]: 展示范围
+        - radiogroup "segmented control" [ref=e314]:
+          - generic [ref=e315]:
+            - generic [ref=e316] [cursor=pointer]:
+              - radio "合肥市"
+              - generic "合肥市" [ref=e317]
+            - generic [ref=e318] [cursor=pointer]:
+              - radio "省内县级"
+              - generic "省内县级" [ref=e319]
+            - generic [ref=e320] [cursor=pointer]:
+              - radio "省内市级" [checked]
+              - generic "省内市级" [ref=e321]
+            - generic [ref=e322] [cursor=pointer]:
+              - radio "全国"
+              - generic "全国" [ref=e323]
+  - generic [ref=e329]:
+    - generic [ref=e330]: 支持左键拖动地图，鼠标悬浮在地图区域内可滚轮放大缩小，并可切换合肥市、省内县级、省内市级与全国范围
+    - generic [ref=e331]: 合肥市 61 个客户

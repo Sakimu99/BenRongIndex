@@ -1,0 +1,28 @@
+- generic [ref=e295]:
+  - generic [ref=e365]:
+    - generic [ref=e366]:
+      - generic [ref=e367]: 合肥视图
+      - strong [ref=e368]: 合肥市区 / 县客户分布示意
+      - paragraph [ref=e369]: 聚焦合肥市下辖区县边界，便于观察本地重点覆盖区域与客户分布密度。
+    - generic [ref=e370]:
+      - generic [ref=e371]:
+        - generic [ref=e372]:
+          - generic [ref=e373]: 覆盖区县
+          - strong [ref=e374]: 9 个
+        - generic [ref=e375]:
+          - generic [ref=e376]: 示例客户
+          - strong [ref=e377]: 170 个
+        - generic [ref=e378]:
+          - generic [ref=e379]: 最密集区域
+          - strong [ref=e380]: 瑶海区
+      - generic [ref=e381]:
+        - generic [ref=e382]: 展示范围
+        - radiogroup "segmented control" [ref=e383]:
+          - generic [ref=e384]:
+            - generic [ref=e385] [cursor=pointer]
+            - generic [ref=e387] [cursor=pointer]
+            - generic [ref=e389] [cursor=pointer]
+            - generic [ref=e391] [cursor=pointer]
+  - generic [ref=e398]:
+    - generic [ref=e399]: 支持左键拖动地图，鼠标悬浮在地图区域内可滚轮放大缩小，并可切换合肥市、省内县级、省内市级与全国范围
+    - generic [ref=e400]: 瑶海区 26 个客户

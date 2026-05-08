@@ -25,9 +25,29 @@ export type DashboardSummary = {
   amountInRange: number;
 };
 
+export type MapViewMode = 'city' | 'county' | 'hefei' | 'surrounding';
+export type MapRegionLevel = 'city' | 'county' | 'province';
+
+export type MapRegionStat = {
+  name: string;
+  customerCount: number;
+  center: [number, number];
+  level: MapRegionLevel;
+  code?: string;
+  parentCode?: string;
+};
+
+export type DashboardMapViews = {
+  defaultMode: MapViewMode;
+  city: MapRegionStat[];
+  county: MapRegionStat[];
+  hefei: MapRegionStat[];
+  surrounding: MapRegionStat[];
+};
 export type DashboardResponse = {
   summary: DashboardSummary;
   trend: TrendDataPoint[];
+  mapViews: DashboardMapViews;
   logs: DashboardLog[];
   meta: {
     startDate: string;

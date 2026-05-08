@@ -5,6 +5,7 @@ import { ArrowDownOutlined } from '@ant-design/icons';
 import { OverviewStats } from '../components/charts/OverviewStats';
 import { DateRangeFilter } from '../components/charts/DateRangeFilter';
 import { BusinessTrendChart } from '../components/charts/BusinessTrendChart';
+import { AnhuiDistrictMap } from '../components/charts/AnhuiDistrictMap';
 import { CompanyIntro } from '../components/company/CompanyIntro';
 import { TeamMembers } from '../components/company/TeamMembers';
 import { PageFooter } from '../components/layout/PageFooter';
@@ -164,6 +165,17 @@ export const HomePage = () => {
           >
             <div id="team">
               <TeamMembers />
+            </div>
+          </SectionContainer>
+
+          <SectionContainer
+            eyebrow="REGIONAL COVERAGE"
+            title="安徽客户分布地图"
+            description="以安徽省县 / 区级边界展示客户覆盖位置，红点用于标记客户所在区域。"
+            className="map-section"
+          >
+            <div id="region-map" className="chart-card">
+              {dashboard ? <AnhuiDistrictMap mapViews={dashboard.mapViews} /> : <Spin />}
             </div>
           </SectionContainer>
 

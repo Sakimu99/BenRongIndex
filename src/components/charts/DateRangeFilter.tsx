@@ -13,6 +13,7 @@ export const DateRangeFilter = ({ value, onChange, onPresetChange }: DateRangeFi
   return (
     <div className="date-range-toolbar">
       <Segmented
+        block
         options={[
           { label: '近 7 天', value: 7 },
           { label: '近 30 天', value: 30 },
@@ -22,6 +23,7 @@ export const DateRangeFilter = ({ value, onChange, onPresetChange }: DateRangeFi
         onChange={(selected) => onPresetChange(Number(selected))}
       />
       <RangePicker
+        style={{ width: '100%' }}
         value={value}
         onChange={(range) => {
           if (range?.[0] && range[1]) {
